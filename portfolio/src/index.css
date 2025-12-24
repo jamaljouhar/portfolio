@@ -1,0 +1,223 @@
+/* ==========================
+   BASE THEMES & BODY
+========================== */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+
+section {
+  background-color: inherit;
+  color: inherit;
+  scroll-margin-top: 80px; /* header fixe */
+}
+
+.section-title {
+  color: #0dcaf0;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* ==========================
+   CARDS & HOVER EFFECTS
+========================== */
+.card {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #0dcaf0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 245, 255, 0.3);
+}
+
+/* ==========================
+   BUTTONS & GRADIENTS
+========================== */
+.btn-gradient {
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00f5ff, #ff00ff);
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.5s;
+  border-radius: 0.5rem;
+}
+
+.btn-gradient:hover::before {
+  left: 100%;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+}
+
+/* ==========================
+   FORM FOCUS
+========================== */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0ff;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+.cursor {
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-fade {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.8s forwards;
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.react-logo-animate {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.about-img-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==========================
+   CONTACT CARDS
+========================== */
+.whatsapp-card {
+  border-bottom: 2px solid #0dcaf0;
+  border-radius: 3px 5px 3px 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* ==========================
+   NAVBAR HOVER
+========================== */
+.nav-gradient {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-gradient::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00f5ff, #ff00ff);
+  transition: width 0.3s ease;
+}
+
+.nav-gradient:hover::before {
+  width: 100%;
+}
+
+.nav-gradient:hover {
+  color: #00f5ff !important;
+  background: rgba(0,245,255,0.1);
+  box-shadow: 0 0 10px rgba(0,245,255,0.2);
+}
+
+/* ==========================
+   PROJECT OVERLAY
+========================== */
+.project-overlay {
+  background-color: rgba(0, 245, 255, 0.1);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-overlay:hover {
+  opacity: 1;
+}
+
+/* ==========================
+   SKILLS FLEX RESPONSIVE
+========================== */
+
+
+
+
+/* ==========================
+   FOOTER LINKS
+========================== */
+.transition-link {
+  position: relative;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.transition-link:hover {
+  color: #0dcaf0; /* couleur du thème */
+  transform: translateY(-2px);
+}
+
+/* Full width pour petits écrans */
+@media (max-width: 400px) {
+  .framework-badge {
+    flex: 0 0 100%;
+    padding: 5px;
+  }
+
+}
