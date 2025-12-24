@@ -1,38 +1,41 @@
 import React from "react";
+import ecommerceImg from "../assets/ecommerce.jpg"; // chemin relatif depuis ton fichier
+import employerImg from "../assets/employer.jpg"; // chemin relatif depuis ton fichier
+import weatherImg from "../assets/weather.jpg"; // chemin relatif depuis ton fichier
 
 const projectsData = [
   {
-    title: "E-commerce site web",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
+    title: "PostGram Chat App",
+    image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+    tech: ["React JS", "Firebase", "CSS"],
+    live: "#",
+    github: "#",
+  },
+  {
+    title: "Todo-list App",
+    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
+    tech: ["React JS", "Node JS", "Bootstrap 5", "SQL Server"],
+    live: "#",
+    github: "#",
+  },
+  {
+    title: "Weather App",
+    image: weatherImg,
+    tech: ["React JS", "OpenWeatherMap API", "Vite", "Bootstrap 5"],
+    live: "#",
+    github: "#",
+  },
+  {
+    title: "SG Employer",
+    image: employerImg,
+    tech: ["React JS", "Node.js", "Bootstrap 5"],
+    live: "#",
+    github: "#",
+  },
+  {
+    title: "E-commerce Website",
+    image: ecommerceImg,
     tech: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    github: "#",
-  },
-  {
-    title: "Gestion des employes",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    github: "#",
-  },
-  {
-    title: "Postgram chat-application",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    tech: ["React js", "Bootstrap 5", "Node js"],
-    live: "#",
-    github: "#",
-  },
-  {
-    title: "To-do List Application",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    tech: ["React js", "Node js & Express", "Bootstrap 5"],
-    live: "#",
-    github: "#",
-  },
-  {
-    title: "Weathe Application",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    tech: ["React js", "API", "Bootstrap 5"],
     live: "#",
     github: "#",
   },

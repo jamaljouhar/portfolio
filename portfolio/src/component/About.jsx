@@ -45,16 +45,6 @@ function About() {
               ))}
             </div>
           </div>
-          {/* Image */}
-          <div className="col-12 col-lg-5 text-center mb-4 mb-lg-0">
-            <img
-              src={aboutImage}
-              alt="About"
-              className="img-fluid rounded about-img-animate"
-              width={300}
-              height={250}
-            />
-          </div>
         </div>
       </div>
 

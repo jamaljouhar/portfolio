@@ -30,7 +30,7 @@ function Contact() {
                 </p>
 
                 <ul className="list-unstyled mb-0">
-                  <li className="whatsapp-card d-flex align-items-center gap-3 p-2 mb-1">
+                  <li className="whatsapp-card d-flex align-items-center gap-3 p-2 mb-2">
                     <FaEnvelope className="text-danger fs-3" />
                     <a
                       href="mailto:jamal.jouhari@gmail.com"
@@ -43,7 +43,7 @@ function Contact() {
                     <FaPhone className="text-success fs-3" />
                     <a
                       href="tel:+212716622297"
-                      className="text-info text-decoration-none fw-bold"
+                      className="text-decoration-none fw-bold"
                     >
                       +212 0716622297
                     </a>

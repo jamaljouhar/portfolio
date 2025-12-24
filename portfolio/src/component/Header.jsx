@@ -53,7 +53,7 @@ function Header() {
 
           <button
             onClick={toggleTheme}
-            className={'btn btn-sm '}
+            className={'btn btn-sm boredr bg-info'}
           >
             {darkMode ? "☀️" : "🌙"}
           </button>

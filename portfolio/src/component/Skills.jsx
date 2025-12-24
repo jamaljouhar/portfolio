@@ -2,21 +2,19 @@ import React from "react";
 import {
   FaJava,
   FaPython,
-  FaPhp,
   FaJs,
   FaHtml5,
-  FaCss3Alt,
   FaReact,
   FaBootstrap,
   FaNodeJs,
+  FaGithub,
+  FaCode,
+  FaFileExcel,
 } from "react-icons/fa";
 import {
   SiC,
-  SiCplusplus,
   SiMysql,
-  SiTailwindcss,
   SiSpring,
-  SiDjango,
   SiLaravel,
   SiExpress,
   SiDotnet,
@@ -42,8 +40,12 @@ const frameworks = [
   { name: ".NET", icon: <SiDotnet size={45} />, color: "#512BD4" },
   { name: "Node JS", icon: <FaNodeJs size={40} />, color: "#339933" },
   { name: "Express", icon: <SiExpress size={40} />, color: "#1ed81eff" },
+  { name: "GitHub", icon: <FaGithub />, color: "#333" },
+  { name: "VS Code", icon: <FaCode />, color: "#007ACC" },
+  { name: "Excel", icon: <FaFileExcel />, color: "#217346" },
 ];
 
+// les tools
 function Skills() {
   return (
     <section
@@ -58,7 +60,7 @@ function Skills() {
 
         <div className="row g-4 justify-content-center">
           {/* Languages */}
-          <div className="col-12">
+          <div>
             <div className="card shadow-sm h-100 border border-info hover-card theme-card">
               <div className="card-body">
                 <h5 className="card-title text-info fs-2 fw-bold m-3">
@@ -82,13 +84,13 @@ function Skills() {
           </div>
 
           {/* Frameworks */}
-          <div className="col-12">
+          <div className="">
             <div className="card shadow-sm h-100 border border-info hover-card theme-card">
               <div className="card-body">
                 <h5 className="card-title text-info fw-bold m-3 fs-2">
                   Frameworks & Tools
                 </h5>
-                <div className="d-flex flex-wrap gap-3 frameworks-container">
+                <div className="d-flex flex-wrap w-100 gap-3 frameworks-container">
                   {frameworks.map((fw, index) => (
                     <span
                       key={index}
@@ -155,15 +157,11 @@ function Skills() {
 
         /* Responsive badges for small screens */
         @media (max-width: 400px) {
-          .card-body {
-            width: 100%;
-          }
           .frameworks-container {
             width: 100%;
           }
           .framework-badge {
             flex: 0 0 100%;
-            width: 50%;
           }
         }
       `}</style>
