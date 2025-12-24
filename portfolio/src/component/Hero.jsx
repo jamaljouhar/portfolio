@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import reactLogo from "../assets/react.svg";
+import reactLogo from "../assets/portfolioLogo.jpeg";
 
 function Hero() {
   const titleText = "Hi, I'm JAMAL Jouhari";
@@ -32,7 +32,7 @@ function Hero() {
     <section
       id="home"
       className="d-flex align-items-center position-relative text-inherit bg-inherit"
-      style={{ minHeight: "100vh", paddingTop: "80px" }}
+      style={{ minHeight: "100vh", paddingTop: "40px" }}
     >
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <div className="row align-items-center gy-5">
@@ -84,7 +84,7 @@ function Hero() {
             <img
               src={reactLogo}
               alt="React Logo"
-              className="img-fluid react-logo-animate mx-auto"
+              className="img-fluid react-logo-animate mx-auto portfolio-photo"
               width={300}
               height={250}
             />

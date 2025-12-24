@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../assets/react.svg";
+import aboutImage from "../assets/code.jpeg";
 
 function About() {
   return (
@@ -50,7 +50,7 @@ function About() {
             <img
               src={aboutImage}
               alt="About"
-              className="img-fluid rounded shadow about-img-animate"
+              className="img-fluid rounded about-img-animate"
               width={300}
               height={250}
             />

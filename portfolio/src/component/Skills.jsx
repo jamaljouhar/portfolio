@@ -155,8 +155,15 @@ function Skills() {
 
         /* Responsive badges for small screens */
         @media (max-width: 400px) {
+          .card-body {
+            width: 100%;
+          }
+          .frameworks-container {
+            width: 100%;
+          }
           .framework-badge {
             flex: 0 0 100%;
+            width: 50%;
           }
         }
       `}</style>

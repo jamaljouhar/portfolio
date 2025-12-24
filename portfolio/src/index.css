@@ -127,6 +127,34 @@ section {
   animation: floatUp 1s ease-out forwards;
 }
 
+/* Container centré */
+.portfolio-photo {
+  border-radius: 20px;           /* Coins arrondis */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Ombre élégante */
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Hover animation */
+.portfolio-photo:hover {
+  transform: scale(1.1) rotate(5deg); /* Zoom + rotation */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Animation continue (bounce + subtle movement) */
+.react-logo-animate {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
 @keyframes floatUp {
   to { transform: translateY(0); opacity: 1; }
 }
