@@ -2,10 +2,6 @@
 
 <h3 align="center">Passionate about JavaScript | Web Developer</h3>
 
-<p align="left">
-  <img src="https://via.placeholder.com/150/2981b9/ffffff?text=Jamal+Jouhari" alt="Jamal Jouhari" />
-</p>
-
 <div align="start" style="text-align:left; max-width:600px; background-color:#f0f4f8; padding:20px; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
   <p>🔭 <b>Currently working on:</b> Système de gestion des employés</p>
