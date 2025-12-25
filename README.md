@@ -13,7 +13,7 @@
   <p>👯 <b>Looking to collaborate on:</b> Mobile applications</p>
 </div>
 
-<div align="center">
+<div align="start">
 
 <h3>Connect with me:</h3>
 
@@ -31,7 +31,7 @@
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="WhatsApp" height="30" width="40" />
   </a>
   <a href="mailto:jamaljouhari@email.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="Email" height="30" width="40" />
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/email.svg" alt="Email" height="30" width="40" />
   </a>
 </p>
 
