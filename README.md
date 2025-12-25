@@ -1,14 +1,12 @@
-<div align="center">
-
-  <h1 style="color:#ff5733;">👋 Hi, I'm Jamal Jouhari</h1>
-  <p style="font-size:16px; color:#555;">
+<div align="start">
+<h1 style="color:#339933; text-align:center; font-weight:bold;">Jamal Jouhari</h1>
+  <p style="font-size:20px; color:#555;">
     Passionate web developer 💻 | Fan of JavaScript, Vue, Nuxt, and all things front-end.<br>
     I love building modern applications and sharing my projects with the community.
   </p>
-
   <hr style="border:1px solid #eee; width:80%;">
-
-  <h2 style="color:#33c3ff;">🚀 Skills</h2>
+  
+  <h2 style=" color:#2981b9; text-align:center; font-weight:bold;">🚀 Skills</h2>
   <p>
     <!-- Languages -->
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -38,13 +36,12 @@
     <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white">
     <img src="https://img.shields.io/badge/Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white">
   </p>
-
   <hr style="border:1px solid #eee; width:80%;">
 
-  <h2 style="color:#ff33aa;">📝 Recent Projects</h2>
+  <h2 style=" color:#2981b9; text-align:center; font-weight:bold;">📝 Recent Projects</h2>
 
   <div style="text-align:left; display:inline-block; max-width:700px;">
-    <h3>🟢 Project 1 - Task Management</h3>
+    <h3 style="text-align:left; ">🟢 Project 1 - Task Management</h3>
     <p>Web application to manage your tasks efficiently.<br><b>Technologies:</b> HTML, CSS, Bootstrap 5, React JS, Node JS</p>
 
     <h3>🔵 Project 2 - Student Management System</h3>
