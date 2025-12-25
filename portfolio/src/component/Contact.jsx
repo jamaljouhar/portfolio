@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaEnvelope,
   FaPhone,
@@ -7,6 +7,49 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    message: "",
+  });
+
+  const getMessage = (e) => {
+    setValues((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { username, email, message } = values;
+
+    if (!username || !email || !message) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    const text = `Hello 👋
+      Name: ${username}
+      Email: ${email}
+      Message: ${message}`;
+
+     const whatsappURL = `https://wa.me/212716622297?text=${encodeURIComponent(
+       text
+     )}`;
+
+     window.open(whatsappURL, "_blank");
+
+    // Reset form
+    setValues({
+      username: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <section
       className="contact py-5"
@@ -72,13 +115,19 @@ function Contact() {
           <div className="col-12 col-md-7 animate-slide-up animate-delay-5">
             <div className="card hover-card shadow-sm border theme-card h-100">
               <div className="card-body">
-                <form className="contact-form" autoComplete="off">
+                <form
+                  className="contact-form"
+                  autoComplete="off"
+                  onSubmit={handleSubmit}
+                >
                   <div className="mb-3 form-floating">
                     <input
                       type="text"
                       className="form-control theme-input"
-                      id="name"
+                      name="username"
                       placeholder="Your Name"
+                      value={values.username}
+                      onChange={getMessage}
                     />
                     <label htmlFor="name" className="text-info fw-bold">
                       Your Name
@@ -89,8 +138,10 @@ function Contact() {
                     <input
                       type="email"
                       className="form-control theme-input"
-                      id="email"
+                      name="email"
                       placeholder="Your Email"
+                      value={values.email}
+                      onChange={getMessage}
                     />
                     <label htmlFor="email" className="text-info fw-bold">
                       Your Email
@@ -100,8 +151,10 @@ function Contact() {
                   <div className="mb-3 form-floating">
                     <textarea
                       className="form-control theme-input"
-                      id="message"
+                      name="message"
                       placeholder="Your Message"
+                      value={values.message}
+                      onChange={getMessage}
                       style={{ minHeight: "150px" }}
                     ></textarea>
                     <label htmlFor="message" className="text-info fw-bold">
