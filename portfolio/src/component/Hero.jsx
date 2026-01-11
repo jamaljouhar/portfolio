@@ -42,7 +42,7 @@ function Hero() {
               {title.includes("JAMAL") ? (
                 <>
                   Hi, I'm{" "}
-                  <span className="text-info fs-md-2 fw-bold">
+                  <span className="text-info fw-bold">
                     JAMAL Jouhari
                   </span>
                 </>
@@ -52,7 +52,7 @@ function Hero() {
               <span className="cursor">|</span>
             </h1>
 
-            <p className="fst-italic fs-2 fw-bold mt-3 text-inherit">
+            <p className="fst-italic  fw-bold mt-3 text-inherit">
               {subtitle}
               <span className="cursor">|</span>
             </p>

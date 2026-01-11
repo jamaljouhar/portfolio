@@ -17,7 +17,7 @@ function Header() {
     <header className="fixed-top border-bottom shadow-sm  bg-dark text-white">
       <div className="container d-flex justify-content-between align-items-center p-3">
         <h2
-          className={`fw-bold ${darkMode ? "text-info" : "text-primary"} m-0`}
+          className={`fw-bold ${darkMode ? "text-white" : "text-white"} m-0`}
         >
           Jamal JOUHARI<span className="fs-2">.</span>
         </h2>
