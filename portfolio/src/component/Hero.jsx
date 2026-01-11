@@ -32,7 +32,7 @@ function Hero() {
     <section
       id="home"
       className="d-flex align-items-center position-relative text-inherit bg-inherit"
-      style={{ minHeight: "100vh", paddingTop: "40px" }}
+      style={{ minHeight: "100vh", paddingTop: "70px" }}
     >
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <div className="row align-items-center gy-5">
@@ -42,7 +42,7 @@ function Hero() {
               {title.includes("JAMAL") ? (
                 <>
                   Hi, I'm{" "}
-                  <span className="text-info fs-md-2 fs-lg-1">
+                  <span className="text-info fs-md-2 fw-bold">
                     JAMAL Jouhari
                   </span>
                 </>
@@ -52,7 +52,7 @@ function Hero() {
               <span className="cursor">|</span>
             </h1>
 
-            <p className="fst-italic fs-2 fs-md-4 fs-lg-3 mt-3 text-inherit">
+            <p className="fst-italic fs-2 fw-bold mt-3 text-inherit">
               {subtitle}
               <span className="cursor">|</span>
             </p>

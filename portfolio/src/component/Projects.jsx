@@ -20,11 +20,12 @@ const projectsData = [
   },
   {
     title: "Weather App",
-    image: weatherImg,
+    image: weatherImg, // صورة screenshot من التطبيق
     tech: ["React JS", "OpenWeatherMap API", "Vite", "Bootstrap 5"],
-    live: "#",
-    github: "#",
+    live: "https://jamaljouhar.github.io/weathe-app-react-js", // رابط التطبيق المنشور
+    github: "https://github.com/jamaljouhar/weathe-app-react-js", // رابط الريبو
   },
+
   {
     title: "SG Employer",
     image: employerImg,
