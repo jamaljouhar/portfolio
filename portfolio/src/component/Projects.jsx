@@ -20,10 +20,10 @@ const projectsData = [
   },
   {
     title: "Weather App",
-    image: weatherImg, // صورة screenshot من التطبيق
+    image: weatherImg,
     tech: ["React JS", "OpenWeatherMap API", "Vite", "Bootstrap 5"],
-    live: "https://jamaljouhar.github.io/weathe-app-react-js", // رابط التطبيق المنشور
-    github: "https://github.com/jamaljouhar/weathe-app-react-js", // رابط الريبو
+    live: "https://jamaljouhar.github.io/weathe-app-react-js", 
+    github: "https://github.com/jamaljouhar/weathe-app-react-js", 
   },
 
   {

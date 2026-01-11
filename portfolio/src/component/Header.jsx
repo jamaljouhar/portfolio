@@ -14,7 +14,7 @@ function Header() {
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   return (
-    <header className="fixed-top border-bottom shadow-sm">
+    <header className="fixed-top border-bottom shadow-sm  bg-dark text-white">
       <div className="container d-flex justify-content-between align-items-center p-3">
         <h2
           className={`fw-bold ${darkMode ? "text-info" : "text-primary"} m-0`}
