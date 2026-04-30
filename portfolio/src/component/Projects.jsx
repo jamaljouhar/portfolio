@@ -2,7 +2,8 @@ import React from "react";
 import ecommerceImg from "../assets/ecommerce.jpg"; // chemin relatif depuis ton fichier
 import employerImg from "../assets/employer.jpg"; // chemin relatif depuis ton fichier
 import weatherImg from "../assets/weather.jpg"; // chemin relatif depuis ton fichier
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+
 const projectsData = [
   {
     title: "PostGram Chat App",
@@ -14,7 +15,7 @@ const projectsData = [
   {
     title: "Todo-list App",
     image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
-    tech: ["React JS", "Node JS", "Bootstrap 5", "SQL Server"],
+    tech: ["React JS", "Spring Boot", "Bootstrap 5", "MySQL"],
     live: "#",
     github: "#",
   },
@@ -27,9 +28,9 @@ const projectsData = [
   },
 
   {
-    title: "SG Employer",
+    title: "Employee Management System",
     image: employerImg,
-    tech: ["React JS", "Node.js", "Bootstrap 5"],
+    tech: ["React.JS & Primereact", "Spring Boot", "CSS & Bootstrap5"],
     live: "#",
     github: "#",
   },

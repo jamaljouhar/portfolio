@@ -14,11 +14,9 @@ function Header() {
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   return (
-    <header className="fixed-top border-bottom shadow-sm ">
+    <header className="fixed-top border-bottom shadow-sm header">
       <div className="container d-flex justify-content-between align-items-center p-3">
-        <h2
-          className={`fw-bold text-info`}
-        >
+        <h2 className={`fw-bold text-info`}>
           Jamal JOUHARI<span className="fs-2">.</span>
         </h2>
 
@@ -26,11 +24,11 @@ function Header() {
         <nav className="d-none d-lg-block">
           <ul className="nav gap-3">
             {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
-              <li className="nav-item" key={item}>
+              <li className="nav-item text-white" key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
                   className={`nav-link fw-bold ${
-                    darkMode ? "text-white" : "text-dark"
+                    darkMode ? "text-white" : "text-white"
                   }`}
                 >
                   {item}
@@ -43,17 +41,17 @@ function Header() {
         {/* Hamburger & theme toggle */}
         <div className="d-flex align-items-center gap-2">
           <button
-            className="navbar-toggler d-lg-none border-0"
+            className="navbar-toggler d-lg-none text-white border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarMenu"
           >
-            <List color={darkMode ? "white" : "black"} size={30} />
+            <List color={darkMode ? "white" : "white"} size={30} />
           </button>
 
           <button
             onClick={toggleTheme}
-            className={'btn btn-sm boredr bg-info'}
+            className={"btn btn-sm boredr bg-info"}
           >
             {darkMode ? "☀️" : "🌙"}
           </button>

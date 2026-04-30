@@ -32,10 +32,10 @@ function Contact() {
 
     setError("");
 
-    const text = `Hello 👋
-Name: ${username}
-Email: ${email}
-Message: ${message}`;
+    const text = `Hello Mr
+      Name: ${username}
+      Email: ${email}
+      Message: ${message}`;
 
     window.open(
       `https://wa.me/212716622297?text=${encodeURIComponent(text)}`,
