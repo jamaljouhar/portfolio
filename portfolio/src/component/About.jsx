@@ -1,86 +1,56 @@
 import React from "react";
-import aboutImage from "../assets/code.jpeg";
+import { FaRocket, FaClock, FaUsers } from "react-icons/fa";
 
 function About() {
   return (
-    <section
-      id="about"
-      className="d-flex align-items-center py-5 position-relative text-inherit bg-inherit"
-      style={{ scrollMarginTop: "20px" }}
-    >
+    <section id="about" className="about-section">
       <div className="container">
-        <h2 className="section-title text-info text-start mb-3 fw-bold fs-1">
-          About me
-        </h2>
-        <div className="row align-items-center g-4">
-          {/* Texte */}
-          <div className="col-12 col-lg-7">
-            <h3 className="fw-bold text-success mb-3 fs-4 animate__fadeInUp">
-              Passionate Web Developer
-            </h3>
-            <p className="lead mb-4 fw-bold text-inherit animate__fadeInUp">
-              Hi! I am Jamal Jouhari. I'm a passionate software development
-              student dedicated to creating innovative web solutions.
+        <h2 className="section-title text-start">About Me</h2>
+
+        <div className="row align-items-center gy-5">
+          <div className="col-lg-7">
+            <h3 className="about-title">Passionate Full Stack Developer</h3>
+
+            <p className="about-text">
+              I’m Jamal Jouhari, a passionate Full Stack Developer specializing
+              in building modern, scalable, and high-performance web
+              applications using React and Spring Boot. I focus on crafting
+              clean, user-friendly interfaces combined with robust and secure
+              backend systems. My goal is to transform ideas into efficient
+              digital solutions while maintaining high code quality,
+              performance, and great user experience.
             </p>
 
-            {/* Stats */}
-            <div className="row text-center text-lg-start g-3">
+            <div className="stats-grid">
               {[
-                { number: "15+", label: "Projects Completed" },
-                { number: "2+", label: "Years Experience" },
-                { number: "10+", label: "Happy Clients" },
-              ].map((stat, idx) => (
-                <div
-                  className="col-12 col-md-4 animate__fadeInUp"
-                  style={{ animationDelay: `${idx * 0.2}s` }}
-                  key={idx}
-                >
-                  <div className="card shadow-sm h-100 border btn-gradient bg-inherit text-inherit">
-                    <div className="card-body">
-                      <h4 className="fw-bold text-info fs-3">{stat.number}</h4>
-                      <p className="mb-0 fw-bold text-inherit">{stat.label}</p>
-                    </div>
-                  </div>
+                {
+                  number: "15+",
+                  label: "Projects Completed",
+                  icon: <FaRocket />,
+                },
+                { number: "2+", label: "Years Experience", icon: <FaClock /> },
+                { number: "10+", label: "Happy Clients", icon: <FaUsers /> },
+              ].map((stat, i) => (
+                <div className="stat-modern" key={i}>
+                  <span className="stat-icon text-info">{stat.icon}</span>
+                  <h3 className="stat-number">{stat.number}</h3>
+                  <p className="stat-label">{stat.label}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="d-flex flex-column flex-sm-row gap-4 justify-content-center justify-content-lg-start">
+
+                <a
+                  href="#contact"
+                  className=" mt-4 d-inline-block btn btn-outline-info fw-bold px-4 w-sm-auto"
+                >
+                  Contact Me
+                </a>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Inline CSS pour animations et hover */}
-      <style jsx>{`
-        .about-img-animate {
-          transform: translateY(20px);
-          opacity: 0;
-          animation: floatUp 1s ease-out forwards;
-        }
-        @keyframes floatUp {
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-        .animate__fadeInUp {
-          opacity: 0;
-          transform: translateY(20px);
-          animation: fadeUp 0.8s ease-out forwards;
-        }
-        @keyframes fadeUp {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .btn-gradient {
-          transition: transform 0.3s, box-shadow 0.3s;
-          cursor: pointer;
-        }
-        .btn-gradient:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 8px 20px rgba(0, 245, 255, 0.4);
-        }
-      `}</style>
     </section>
   );
 }

@@ -14,10 +14,10 @@ function Header() {
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   return (
-    <header className="fixed-top border-bottom shadow-sm  bg-dark text-white">
+    <header className="fixed-top border-bottom shadow-sm ">
       <div className="container d-flex justify-content-between align-items-center p-3">
         <h2
-          className={`fw-bold ${darkMode ? "text-white" : "text-white"} m-0`}
+          className={`fw-bold text-info`}
         >
           Jamal JOUHARI<span className="fs-2">.</span>
         </h2>
