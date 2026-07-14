@@ -17,7 +17,7 @@ const projectsData = [
     image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg",
     tech: ["React JS", "Spring Boot", "Bootstrap 5", "MySQL"],
     live: "#",
-    github: "#",
+    github: "https://github.com/jamaljouhar/to-do-app",
   },
   {
     title: "Weather App",
