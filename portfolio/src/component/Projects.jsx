@@ -23,16 +23,16 @@ const projectsData = [
     title: "Weather App",
     image: weatherImg,
     tech: ["React JS", "OpenWeatherMap API", "Vite", "Bootstrap 5"],
-    live: "https://jamaljouhar.github.io/weathe-app-react-js", 
-    github: "https://github.com/jamaljouhar/weathe-app-react-js", 
+    live: "https://jamaljouhar.github.io/weathe-app-react-js",
+    github: "https://github.com/jamaljouhar/weathe-app-react-js",
   },
 
   {
     title: "Employee Management System",
     image: employerImg,
-    tech: ["React.JS & Primereact", "Spring Boot", "CSS & Bootstrap5"],
-    live: "#",
-    github: "#",
+    tech: ["React.JS & Primereact", "Spring Boot", "CSS & Bootstrap5", "MySQL"],
+    live: "",
+    github: "https://github.com/jamaljouhar/employees-management-system",
   },
   {
     title: "E-commerce Website",
