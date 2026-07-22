@@ -6,11 +6,11 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projectsData = [
   {
-    title: "PostGram Chat App",
+    title: "Clock App",
     image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
-    tech: ["React JS", "Firebase", "CSS"],
-    live: "#",
-    github: "#",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://jamaljouhar.github.io/clock-app/",
+    github: "https://github.com/jamaljouhar/clock-app",
   },
   {
     title: "Todo-list App",
