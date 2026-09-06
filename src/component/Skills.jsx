@@ -1,37 +1,30 @@
 import React from "react";
 import {
   FaJava,
-  FaPython,
   FaJs,
   FaHtml5,
   FaReact,
-  FaBootstrap,
   FaNodeJs,
   FaGithub,
   FaCode,
 } from "react-icons/fa";
 import {
-  SiC,
   SiMysql,
-  SiSpring,
   SiLaravel,
-  SiExpress,
-  SiDotnet,
   SiIntellijidea,
   SiPostgresql,
+  SiPostman,
 } from "react-icons/si";
 
-// `level` (0-100) pilote l'ordre d'affichage : le plus haut niveau apparaît en premier.
-// Pour changer l'ordre plus tard, il suffit d'ajuster ces chiffres.
 const frontend = [
-  { name: "JavaScript", icon: <FaJs />, color: "#f7df1e", level: 95 },
+  { name: "JavaScript & TypeScript", icon: <FaJs />, color: "#f7df1e", level: 100 },
   { name: "React.JS & Angular", icon: <FaReact />, color: "#61DAFB", level: 90 },
-  { name: "HTML5", icon: <FaHtml5 />, color: "#f3091d", level: 90 },
+  { name: "HTML5", icon: <FaHtml5 />, color: "#f3091d", level: 100 },
   {
     name: "CSS3 & Tailwind & Bootstrap",
     icon: <FaCode />,
     color: "#38BDF8",
-    level: 85,
+    level: 100,
   },
 ];
 
@@ -39,19 +32,45 @@ const backend = [
   {
     name: "Java & Spring Boot",
     icon: <FaJava />,
-    color: "#f89820",
-    level: 90,
+    color: "#fc8e08",
+    level: 99,
   },
   { name: "Node.js & Express", icon: <FaNodeJs />, color: "#339933", level: 80 },
-  { name: "SQL / MySQL", icon: <SiMysql />, color: "#4479A1", level: 80 },
-  { name: "PHP & Laravel", icon: <SiLaravel />, color: "#FF2D20", level: 70 },
+  { name: "SQL / MySQL", icon: <SiMysql />, color: "#4479A1", level: 95 },
+  { name: "PHP & Laravel", icon: <SiLaravel />, color: "#FF2D20", level: 75 },
 ];
 
 const tools = [
-  { name: "GitHub", icon: <FaGithub />, color: "#f11616", level: 90 },
-  { name: "VS Code", icon: <FaCode />, color: "#007ACC", level: 90 },
-  { name: "PostgreSQL", icon: <SiPostgresql />, color: "#0699fa", level: 75 },
-  { name: "IntelliJ IDEA", icon: <SiIntellijidea />, color: "#217346", level: 70 },
+  {
+    name: "VS Code",
+    icon: <FaCode className="fs-2" />,
+    color: "#007ACC",
+    level: 100,
+  },
+  {
+    name: "IntelliJ IDEA",
+    icon: <SiIntellijidea className="fs-2" />,
+    color: "#217346",
+    level: 99,
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="fs-2" />,
+    color: "#0699fa",
+    level: 75,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub className="fs-2" />,
+    color: "#f11616",
+    level: 79,
+  },
+  {
+    name: "Postman",
+    icon: <SiPostman className="fs-2" />,
+    color: "#f3a108",
+    level: 85,
+  },
 ];
 
 // Trie une catégorie du niveau le plus élevé au plus faible
@@ -80,14 +99,24 @@ function Skills() {
                       {item.icon}
                     </span>
                     <p className="skill-name">{item.name}</p>
-                    <div className="skill-level-track">
-                      <div
-                        className="skill-level-fill"
-                        style={{
-                          width: `${item.level}%`,
-                          backgroundColor: item.color,
-                        }}
-                      />
+
+                    <div className="skill-level">
+                      <div className="skill-level-track">
+                        <div
+                          className="skill-level-fill"
+                          style={{
+                            width: `${item.level}%`,
+                            backgroundColor: item.color,
+                          }}
+                        />
+                      </div>
+
+                      <span
+                        className="skill-percentage"
+                        style={{ color: item.color }}
+                      >
+                        {item.level}%
+                      </span>
                     </div>
                   </div>
                 ))}

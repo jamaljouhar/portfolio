@@ -14,22 +14,58 @@ function Header() {
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   return (
-    <header className="fixed-top border-bottom shadow-sm header">
-      <div className="container d-flex justify-content-between align-items-center p-3">
-        <h2 className={`fw-bold text-info`}>
-          Jamal JOUHARI<span className="fs-2">.</span>
-        </h2>
+    <header className="site-header fixed-top">
+    <div className="container">
+      <div className="header-inner">
+        <a href="#home" className="logo">
+          <span>J</span>
+          <span>J</span>
+        </a>
 
-        {/* Navigation desktop */}
-        <nav className="d-none d-lg-block">
-          <ul className="nav gap-3">
+        <nav className="desktop-nav">
+          <ul>
             {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
-              <li className="nav-item text-white" key={item}>
+              <li key={item}>
+                <a href={`#${item.toLowerCase()}`}>{item}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="header-actions">
+          <button
+            onClick={toggleTheme}
+            className="theme-btn"
+            aria-label="Toggle theme"
+          >
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+
+          <button
+            className="mobile-menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileNavbar"
+            aria-controls="mobileNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <List size={27} />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div className="collapse mobile-navbar" id="mobileNavbar">
+      <div className="container">
+        <nav>
+          <ul>
+            {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
+              <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className={`nav-link fw-bold ${
-                    darkMode ? "text-white" : "text-white"
-                  }`}
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mobileNavbar"
                 >
                   {item}
                 </a>
@@ -37,48 +73,10 @@ function Header() {
             ))}
           </ul>
         </nav>
-
-        {/* Hamburger & theme toggle */}
-        <div className="d-flex align-items-center gap-2">
-          <button
-            className="navbar-toggler d-lg-none text-white border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-          >
-            <List color={darkMode ? "white" : "white"} size={30} />
-          </button>
-
-          <button
-            onClick={toggleTheme}
-            className={"btn btn-sm boredr bg-info"}
-          >
-            {darkMode ? "☀️" : "🌙"}
-          </button>
-        </div>
       </div>
-
-      {/* Mobile menu */}
-      <div className="collapse w-50" id="navbarMenu">
-        <div className={`p-3 ${darkMode ? "bg-dark" : "bg-light"}`}>
-          <ul className="nav flex-column gap-2">
-            {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
-              <li className="nav-item" key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className={`nav-link fw-bold ${
-                    darkMode ? "text-white" : "text-dark"
-                  }`}
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </header>
-  );
+    </div>
+  </header>
+  )
 }
 
 export default Header;
