@@ -51,7 +51,7 @@ const projectsData = [
       "Postman",
     ],
     live: null,
-    github: null,
+    github: "https://github.com/jamaljouhar/auth-system",
   },
   {
     title: "Clock App",
