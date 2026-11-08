@@ -8,7 +8,7 @@ function Header() {
 
   useEffect(() => {
     document.body.classList.remove("dark-mode", "light-mode");
-    document.body.classList.add(darkMode ? "dark-mode" : "light-mode");
+    document.body.classList.add(darkMode ? "light-mode" : "dark-mode");
   }, [darkMode]);
 
   const toggleTheme = () => setDarkMode((prev) => !prev);

@@ -158,7 +158,7 @@ ${message}`;
                 placeholder="Tell me about your project or opportunity..."
                 value={values.message}
                 onChange={handleChange}
-                rows="6"
+                rows="4"
               />
             </div>
 

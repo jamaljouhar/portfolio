@@ -3,6 +3,7 @@ import ecommerceImg from "../assets/ecommerce.jpg";
 import employerImg from "../assets/employer.jpg";
 import weatherImg from "../assets/weather.jpg";
 import authImg from "../assets/auth.png";
+import medicalImg from "../assets/medicalplatform.png"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projectsData = [
@@ -52,6 +53,21 @@ const projectsData = [
     ],
     live: null,
     github: "https://github.com/jamaljouhar/auth-system",
+  },
+  {
+    title: "Medical Platform",
+    image: medicalImg,
+    description:
+      "A full-stack medical management platform that allows patients to manage their profiles, book appointments, consult doctors and access medical records and prescriptions.",
+    tech: [
+      "React.js",
+      "Bootstrap 5",
+      "PrimeReact",
+      "Symfony PHP",
+      "PostgreSQL",
+    ],
+    live: null,
+    github: "https://github.com/jamaljouhar/medical_platform",
   },
   {
     title: "Clock App",

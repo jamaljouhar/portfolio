@@ -17,14 +17,29 @@ import {
 } from "react-icons/si";
 
 const frontend = [
-  { name: "JavaScript & TypeScript", icon: <FaJs />, color: "#f7df1e", level: 100 },
-  { name: "React.JS & Angular", icon: <FaReact />, color: "#61DAFB", level: 90 },
-  { name: "HTML5", icon: <FaHtml5 />, color: "#f3091d", level: 100 },
   {
-    name: "CSS3 & Tailwind & Bootstrap",
+    name: "HTML5 & CSS & JavaScript",
+    icon: <FaHtml5 />,
+    color: "#f3091d",
+    level: 100,
+  },
+  {
+    name: "Tailwind & Bootstrap",
     icon: <FaCode />,
     color: "#38BDF8",
     level: 100,
+  },
+  {
+    name: "React.JS & Angular",
+    icon: <FaReact />,
+    color: "#61DAFB",
+    level: 90,
+  },
+  {
+    name: "React Native",
+    icon: <FaReact />,
+    color: "#61DAFB",
+    level: 90,
   },
 ];
 
@@ -37,27 +52,15 @@ const backend = [
   },
   { name: "Node.js & Express", icon: <FaNodeJs />, color: "#339933", level: 80 },
   { name: "SQL / MySQL", icon: <SiMysql />, color: "#4479A1", level: 95 },
-  { name: "PHP & Laravel", icon: <SiLaravel />, color: "#FF2D20", level: 75 },
+  { name: "PHP & Symfony", icon: <SiLaravel />, color: "#FF2D20", level: 75 },
 ];
 
 const tools = [
-  {
-    name: "VS Code",
-    icon: <FaCode className="fs-2" />,
-    color: "#007ACC",
-    level: 100,
-  },
   {
     name: "IntelliJ IDEA",
     icon: <SiIntellijidea className="fs-2" />,
     color: "#217346",
     level: 99,
-  },
-  {
-    name: "PostgreSQL",
-    icon: <SiPostgresql className="fs-2" />,
-    color: "#0699fa",
-    level: 75,
   },
   {
     name: "GitHub",

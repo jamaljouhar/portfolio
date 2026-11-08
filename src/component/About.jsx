@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRocket, FaClock, FaUsers, FaCode, FaCheckCircle } from "react-icons/fa";
 
 function About() {
@@ -6,17 +5,17 @@ function About() {
     {
       number: "15+",
       label: "Projects Completed",
-      icon: <FaRocket />,
+      icon: <FaRocket className="text-info"/>,
     },
     {
-      number: "2+",
+      number: "0+",
       label: "Years Experience",
-      icon: <FaClock />,
+      icon: <FaClock className="text-warning"/>,
     },
     {
-      number: "10+",
+      number: "0+",
       label: "Happy Clients",
-      icon: <FaUsers />,
+      icon: <FaUsers className="text-danger"/>,
     },
   ];
 
@@ -35,7 +34,7 @@ function About() {
             </p>
 
             <p className="about-text">
-              I specialize in React, Angular, Spring Boot, and Laravel, with a
+              I specialize in React, Angular, Spring Boot, and Symfony, with a
               strong focus on clean architecture, secure APIs, performance, and
               maintainable code.
             </p>
@@ -64,9 +63,9 @@ function About() {
             <div className="stats-grid">
               {stats.map((stat, i) => (
                 <div className="stat-modern" key={i}>
-                  <span className="stat-icon">{stat.icon}</span>
-                  <h3 className="stat-number">{stat.number}</h3>
-                  <p className="stat-label">{stat.label}</p>
+                  <span className="stat-icon stat-media">{stat.icon}</span>
+                  <h3 className="stat-number stat-media">{stat.number}</h3>
+                  <p className="stat-label stat-media">{stat.label}</p>
                 </div>
               ))}
             </div>
